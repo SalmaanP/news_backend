@@ -13,7 +13,6 @@ goose-extractor==1.0.22
 greenlet==0.4.10
 ipaddress==1.0.17
 jieba==0.38
-lxml==3.7.0
 MultipartPostHandler==0.1.0
 networkx==1.9.1
 nltk==3.2.1

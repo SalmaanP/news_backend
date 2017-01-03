@@ -4,6 +4,7 @@ lxml:
 sudo apt-get install libxml2-dev libxslt1-dev python-dev
 sudo apt-get install python-lxml
 
+remove lxml from requirements.txt
 go to directory and pip install requirements.txt
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
@@ -15,6 +16,41 @@ install npm
 
 change 3000 to 80 port iptable
 
+{
+
+Create soft link for running node from CLI on ubuntu aws. (runs on nodejs)
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+
+To View:
+sudo iptables -t nat -L
+
+To change:
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
+
+To remove:
+sudo iptables -t nat -D PREROUTING 1
+
+For Persisting on reboot:
+Add these two lines in /etc/network/interfaces:
+pre-up iptables-restore < /etc/iptables.rules
+post-down iptables-save > /etc/iptables.rules
+
+
+To start app on server restart:
+pm2 startup
+pm2 save 
+or pm2 update
+
+find process
+ps OR lsof -i :3000 (port number)
+
+kill process:
+kill -9 pid
+
+
+}
+
 install pm2
 
 sudo npm install pm2 -g
@@ -22,8 +58,22 @@ sudo npm install pm2 -g
 redis:
 http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/GettingStarted.ConnectToCacheNode.html
 
+{
+
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+
+src/redis-cli -c -h mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com -p 6379
+
+
+}
+
 to daemonize script:
 https://web.archive.org/web/20160305151936/http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+Dont do above, do this:
+nohup some_command > nohup2.out&
 
 put code in run method override, command python daemonscript.py start,stop,restart
 

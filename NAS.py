@@ -10,6 +10,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 import datetime
 from time import sleep
+import secret
 
 
 def init():
@@ -18,10 +19,10 @@ def init():
 
     r = praw.Reddit(user_agent="Samachar Bot for /r/india by /u/sallurocks")
     scopes = {u'edit', u'submit', u'read', u'privatemessages', u'identity', u'history'}
-    oauth_helper = PrawOAuth2Mini(r, app_key=os.environ['news_app_key'],
-                                  app_secret=os.environ['news_app_secret'],
-                                  access_token=os.environ['news_access_token'],
-                                  refresh_token=os.environ['news_refresh_token'], scopes=scopes)
+    oauth_helper = PrawOAuth2Mini(r, app_key=secret.news_app_key,
+                                  app_secret=secret.news_app_secret,
+                                  access_token=secret.news_access_token,
+                                  refresh_token=secret.news_refresh_token, scopes=scopes)
 
     init_object = {'db': db,
                    'reddit': r,
@@ -148,10 +149,10 @@ def insert(collection, submission_object, summarizer_object):
         collection.update_one({'reddit_id': submission_object.get('reddit_id')},
                               {"$set": {"score": submission_object.get('score'),
                                         "num_comments": submission_object.get('num_comments')}}, upsert=True)
-        print 'updated'
+        #print 'updated'
     else:
         collection.insert_one(insert_object)
-        print 'inserted'
+        #print 'inserted'
 
 
 def main(subreddit):
@@ -161,7 +162,7 @@ def main(subreddit):
     submissions = get_submissions(reddit_object, subreddit)
 
     for submission in submissions:
-        print submission.domain
+        #print submission.domain
         if submission.domain not in blacklist.blocked:
 
             submission_object = submission_details(submission, init_object.get("goose"))
