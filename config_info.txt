@@ -66,6 +66,7 @@ cd redis-stable
 make
 
 src/redis-cli -c -h mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com -p 6379
+src/redis-cli -c -h news.wcekgc.0001.usw2.cache.amazonaws.com -p 6379
 
 
 }
