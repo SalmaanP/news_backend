@@ -40,7 +40,7 @@ def get_submissions(r, current_subreddit):
     except praw.errors.HTTPException as h:
         print h
         sleep(300)
-        main(current_subreddit)
+        return []
 
 
 def summarize(url, article_text):
