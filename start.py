@@ -10,18 +10,25 @@ while True:
 
     try:
         count += 1
-        for category in categories:
-            print "*************"
-            print str(datetime.now())
-            print "Awake: Starting now, current category: " + category + " , current count: " + str(count)
-            print "*************"
-            c.main(category)
-            print "*************"
-            print str(datetime.now())
-            print "Sleeping for 1 hour, current count: " + str(count)
-            print "*************"
-        sleep(600)
+        try:
+            for category in categories:
+                print "*************"
+                print str(datetime.now())
+                print "Now aggregating, current category: " + category + " , current count: " + str(count)
+                print "*************"
+                c.main(category)
+                print "*************"
+                print str(datetime.now())
+                print "Now aggregating, current count: " + str(count)
+                print "*************"
+            print "Sleeping for 10 minutes"
+            sleep(600)
+        except Exception as e:
+            print e
+            sleep(100)
+            continue
 
-    except Exception:
-        sleep(1800)
+    except Exception as e:
+        print e
+        sleep(100)
         continue
