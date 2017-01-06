@@ -24,7 +24,7 @@ class MyDaemon(Daemon):
 		            print str(datetime.now())
 		            print "Sleeping for 1 hour, current count: " + str(count)
 		            print "*************"
-		        sleep(3600)
+		        sleep(600)
 
 		    except Exception:
 		        sleep(1800)
