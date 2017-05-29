@@ -11,11 +11,14 @@ from bson import ObjectId
 import datetime
 from time import sleep
 import secret
+import urllib
 
 
 def init():
-    client = MongoClient('mongodb://localhost')
-    db = client['samacharbot2']
+ 
+    connection = MongoClient(secret.mongo_url, secret.mongo_port)
+    db = connection[secret.mongo_db]
+    db.authenticate(secret.mongo_user, urllib.quote_plus(secret.mongo_pass))
 
     r = praw.Reddit(user_agent="Samachar Bot for /r/india by /u/sallurocks")
     scopes = {u'edit', u'submit', u'read', u'privatemessages', u'identity', u'history'}
