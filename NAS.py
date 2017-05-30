@@ -166,12 +166,17 @@ def main(subreddit):
 
     for submission in submissions:
         #print submission.domain
-        if submission.domain not in blacklist.blocked:
+        try:
+            if submission.domain not in blacklist.blocked:
 
-            submission_object = submission_details(submission, init_object.get("goose"))
-            if submission_object is None:
-                continue
+                submission_object = submission_details(submission, init_object.get("goose"))
+                if submission_object is None:
+                    continue
 
-            summarizer_object = summarize(submission_object.get("url"), submission_object.get("article_text"))
-            if summarizer_object is not None:
-                insert(init_object.get('db')[subreddit], submission_object, summarizer_object)
+                summarizer_object = summarize(submission_object.get("url"), submission_object.get("article_text"))
+                if summarizer_object is not None:
+                    insert(init_object.get('db')[subreddit], submission_object, summarizer_object)
+
+        except Exception as e:
+            print e
+            continue

@@ -5,7 +5,7 @@ from time import sleep
 from datetime import datetime
 
 count = 0
-categories = ['india', 'worldnews', 'technology', 'science']
+categories = ['technology', 'worldnews', 'india', 'science']
 while True:
 
     try:
@@ -26,7 +26,7 @@ while True:
         except Exception as e:
             print e
             sleep(100)
-            continue
+            pass
 
     except Exception as e:
         print e
