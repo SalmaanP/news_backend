@@ -5,7 +5,7 @@ from time import sleep
 from datetime import datetime
 
 count = 0
-categories = ['technology', 'worldnews', 'india', 'science']
+categories = ['technology', 'worldnews', 'india', 'science', 'news', 'canada', 'unitedkingdom', 'upliftingnews']
 while True:
 
     try:
