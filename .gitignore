@@ -3,3 +3,4 @@ smrzr
 secret.py
 *.log.swp
 *.py.swp
+.idea/

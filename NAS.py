@@ -16,9 +16,9 @@ import urllib
 
 def init():
  
-    connection = MongoClient(secret.mongo_url, secret.mongo_port)
+    connection = MongoClient(secret.mongo_url)
     db = connection[secret.mongo_db]
-    db.authenticate(secret.mongo_user, urllib.quote_plus(secret.mongo_pass))
+    # db.authenticate(secret.mongo_user, urllib.quote_plus(secret.mongo_pass))
 
     r = praw.Reddit(user_agent="Samachar Bot for /r/india by /u/sallurocks")
     scopes = {u'edit', u'submit', u'read', u'privatemessages', u'identity', u'history'}
