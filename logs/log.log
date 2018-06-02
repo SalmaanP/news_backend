@@ -1,0 +1,1631 @@
+2018-05-28 14:29:37,161 INFO [Rotating Log]: Getting submissions from news
+2018-05-28 14:31:36,650 INFO [Rotating Log]: Fetched 100 submissions from news
+2018-05-28 14:32:15,688 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-28 14:32:57,221 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlkcg, category:news
+2018-05-28 14:34:25,117 ERROR [Rotating Log]: No Summary
+2018-05-28 14:34:25,118 ERROR [Rotating Log]: No Summary, Reddit id:8mdzja, category:news
+None
+2018-05-28 14:34:52,555 ERROR [Rotating Log]: No Summary
+2018-05-28 14:34:52,555 ERROR [Rotating Log]: No Summary, Reddit id:8mb4nm, category:news
+None
+2018-05-28 14:35:33,653 INFO [Rotating Log]: Getting submissions from europe
+2018-05-28 14:38:16,871 INFO [Rotating Log]: Fetched 56 submissions from europe
+2018-05-28 14:38:17,536 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi5c, category:europe
+2018-05-28 14:38:33,970 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msbc8, category:europe
+2018-05-28 14:38:44,654 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mrkqx, category:europe
+2018-05-28 14:39:14,368 ERROR [Rotating Log]: No Summary
+2018-05-28 14:39:14,368 ERROR [Rotating Log]: No Summary, Reddit id:8msvhe, category:europe
+None
+2018-05-28 14:39:40,667 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mp9yu, category:europe
+2018-05-28 14:39:55,194 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mss61, category:europe
+2018-05-28 14:41:17,063 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ms3nc, category:europe
+2018-05-28 14:41:31,410 ERROR [Rotating Log]: No Summary, Reddit id:8mq5v1, category:europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 14:41:59,778 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mqdbn, category:europe
+2018-05-28 14:43:28,562 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-28 14:45:30,517 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-28 14:45:37,151 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mpwq3, category:upliftingnews
+2018-05-28 14:45:51,648 ERROR [Rotating Log]: No Summary, Reddit id:8mtepw, category:upliftingnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 14:46:08,121 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-28 14:46:34,095 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-28 14:47:10,316 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-28 14:47:28,493 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-28 14:47:57,128 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-28 14:48:09,289 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-28 14:49:27,542 INFO [Rotating Log]: Getting submissions from india
+2018-05-28 14:50:46,138 INFO [Rotating Log]: Fetched 49 submissions from india
+2018-05-28 14:51:59,967 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mozgz, category:india
+2018-05-28 14:53:04,618 INFO [Rotating Log]: Getting submissions from canada
+2018-05-28 14:54:38,535 INFO [Rotating Log]: Fetched 70 submissions from canada
+2018-05-28 14:54:52,788 ERROR [Rotating Log]: No Summary
+2018-05-28 14:54:52,789 ERROR [Rotating Log]: No Summary, Reddit id:8mqe46, category:canada
+None
+2018-05-28 14:55:08,427 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlr4u, category:canada
+2018-05-28 14:55:43,157 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ms895, category:canada
+2018-05-28 19:25:59,165 INFO [Rotating Log]: Getting submissions from india
+2018-05-28 19:27:37,901 INFO [Rotating Log]: Fetched 50 submissions from india
+2018-05-28 19:28:30,203 ERROR [Rotating Log]: No Summary
+2018-05-28 19:28:30,204 ERROR [Rotating Log]: No Summary, Reddit id:8mupz2, category:india
+None
+2018-05-28 19:29:21,469 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mozgz, category:india
+2018-05-28 19:30:34,736 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mtn2a, category:india
+2018-05-28 19:30:34,736 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-28 19:33:22,742 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-28 19:34:05,559 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-28 19:34:27,503 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-28 19:35:11,369 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-28 19:35:32,124 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-28 19:36:04,822 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-28 19:36:17,433 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-28 19:36:31,671 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m4wru, category:upliftingnews
+2018-05-28 19:37:36,375 ERROR [Rotating Log]: No Summary, Reddit id:8lpesa, category:upliftingnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 19:38:12,407 INFO [Rotating Log]: Getting submissions from technology
+2018-05-28 19:40:32,769 INFO [Rotating Log]: Fetched 91 submissions from technology
+2018-05-28 19:43:51,387 ERROR [Rotating Log]: No Summary
+2018-05-28 19:43:51,387 ERROR [Rotating Log]: No Summary, Reddit id:8merzl, category:technology
+None
+2018-05-28 19:46:13,743 INFO [Rotating Log]: Getting submissions from science
+2018-05-28 19:51:01,575 INFO [Rotating Log]: Fetched 99 submissions from science
+2018-05-28 19:56:15,193 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcbld, category:science
+2018-05-28 19:56:56,697 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m4wsa, category:science
+2018-05-28 19:59:24,043 ERROR [Rotating Log]: No Summary
+2018-05-28 19:59:24,045 ERROR [Rotating Log]: No Summary, Reddit id:8m14ns, category:science
+None
+2018-05-28 20:00:35,770 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m0wer, category:science
+2018-05-28 20:01:08,196 INFO [Rotating Log]: Getting submissions from canada
+2018-05-28 20:03:04,381 INFO [Rotating Log]: Fetched 70 submissions from canada
+2018-05-28 20:03:29,296 ERROR [Rotating Log]: No Summary
+2018-05-28 20:03:29,296 ERROR [Rotating Log]: No Summary, Reddit id:8mqe46, category:canada
+None
+2018-05-28 20:03:54,196 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mudo9, category:canada
+2018-05-28 20:04:40,678 ERROR [Rotating Log]: Error on inserting 8mtdpl, category canada
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Chair of the Task Force on Cannabis Legalization and Regulation Anne McLellan and Vice Chair Mark Ware hold a press conference in Ottawa on Tuesday, December 13, 2016, to discuss the report on Cannabis Legalization and Regulation.\nA main figure on the Liberal government\xe2\x80\x99s consulting \xe2\x80\x98task force\xe2...'
+2018-05-28 20:04:42,496 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlr4u, category:canada
+2018-05-28 20:05:23,506 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mvavt, category:canada
+2018-05-28 20:06:49,982 INFO [Rotating Log]: Getting submissions from news
+2018-05-28 20:08:44,628 INFO [Rotating Log]: Fetched 100 submissions from news
+2018-05-28 20:09:09,345 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-28 20:09:20,655 ERROR [Rotating Log]: No Summary
+2018-05-28 20:09:20,655 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-28 20:10:22,148 ERROR [Rotating Log]: No Summary, Reddit id:8mvmp6, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 20:10:48,005 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlkcg, category:news
+2018-05-28 20:12:39,282 ERROR [Rotating Log]: No Summary
+2018-05-28 20:12:39,282 ERROR [Rotating Log]: No Summary, Reddit id:8mdzja, category:news
+None
+2018-05-28 20:12:53,703 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-28 20:15:10,301 INFO [Rotating Log]: Fetched 99 submissions from worldnews
+2018-05-28 20:15:28,642 ERROR [Rotating Log]: Error on inserting 8mvduz, category worldnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'One of the politicians who shared it on social media was Gwen Graham, a former Democratic member of the U.S. House who is now running for governor of Florida.\nIn a May 18 Facebook post, Graham wrote, "So far this year, more students have been killed in schools than soldiers in combat zones.\nGraham\xe2\x80...'
+2018-05-28 20:19:23,575 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mmobp, category:worldnews
+2018-05-28 20:19:49,881 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mpjc2, category:worldnews
+2018-05-28 20:20:02,111 INFO [Rotating Log]: Getting submissions from china
+2018-05-28 20:21:16,119 INFO [Rotating Log]: Fetched 43 submissions from china
+2018-05-28 20:21:29,076 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-28 20:22:52,878 ERROR [Rotating Log]: No Summary
+2018-05-28 20:22:52,880 ERROR [Rotating Log]: No Summary, Reddit id:8mna1m, category:china
+None
+2018-05-28 20:23:39,917 ERROR [Rotating Log]: No Summary, Reddit id:8mfq6r, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 20:24:03,214 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mfar8, category:china
+2018-05-28 20:24:04,584 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mh9i6, category:china
+2018-05-28 20:24:07,023 INFO [Rotating Log]: Getting submissions from europe
+2018-05-28 20:27:00,444 INFO [Rotating Log]: Fetched 52 submissions from europe
+2018-05-28 20:27:01,733 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi5c, category:europe
+2018-05-28 20:27:18,871 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msbc8, category:europe
+2018-05-28 20:27:34,743 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-28 20:27:45,058 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mrkqx, category:europe
+2018-05-28 20:28:23,173 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mss61, category:europe
+2018-05-28 20:29:04,380 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mp9yu, category:europe
+2018-05-28 20:29:06,963 ERROR [Rotating Log]: No Summary
+2018-05-28 20:29:06,963 ERROR [Rotating Log]: No Summary, Reddit id:8msvhe, category:europe
+None
+2018-05-28 20:30:38,230 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ms3nc, category:europe
+2018-05-28 20:31:24,815 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mu00g, category:europe
+2018-05-28 20:31:57,881 ERROR [Rotating Log]: No Summary, Reddit id:8mq5v1, category:europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 20:32:46,082 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mqdbn, category:europe
+2018-05-28 20:32:54,098 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-28 20:35:14,638 INFO [Rotating Log]: Fetched 74 submissions from unitedkingdom
+2018-05-28 20:37:43,118 ERROR [Rotating Log]: No Summary
+2018-05-28 20:37:43,118 ERROR [Rotating Log]: No Summary, Reddit id:8mqmaa, category:unitedkingdom
+None
+2018-05-28 20:39:54,749 ERROR [Rotating Log]: No Summary
+2018-05-28 20:39:54,749 ERROR [Rotating Log]: No Summary, Reddit id:8mgwj9, category:unitedkingdom
+None
+2018-05-28 20:39:54,749 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-28 20:49:54,749 INFO [Rotating Log]: Getting submissions from news
+2018-05-28 20:51:59,362 INFO [Rotating Log]: Fetched 100 submissions from news
+2018-05-28 20:52:31,492 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-28 20:52:42,456 ERROR [Rotating Log]: No Summary
+2018-05-28 20:52:42,457 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-28 20:54:05,894 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlkcg, category:news
+2018-05-28 20:55:42,891 ERROR [Rotating Log]: No Summary
+2018-05-28 20:55:42,892 ERROR [Rotating Log]: No Summary, Reddit id:8mdzja, category:news
+None
+2018-05-28 20:56:00,358 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-28 20:58:32,089 INFO [Rotating Log]: Fetched 99 submissions from worldnews
+2018-05-28 21:02:22,763 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mmobp, category:worldnews
+2018-05-28 21:02:39,227 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mpjc2, category:worldnews
+2018-05-28 21:02:43,098 INFO [Rotating Log]: Getting submissions from science
+2018-05-28 21:06:53,618 INFO [Rotating Log]: Fetched 99 submissions from science
+2018-05-28 21:07:17,270 ERROR [Rotating Log]: No Summary, Reddit id:8mswsh, category:science
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 21:11:46,993 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcbld, category:science
+2018-05-28 21:12:23,648 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m4wsa, category:science
+2018-05-28 21:14:50,105 ERROR [Rotating Log]: No Summary
+2018-05-28 21:14:50,105 ERROR [Rotating Log]: No Summary, Reddit id:8m14ns, category:science
+None
+2018-05-28 21:16:30,105 INFO [Rotating Log]: Getting submissions from canada
+2018-05-28 21:18:34,362 INFO [Rotating Log]: Fetched 72 submissions from canada
+2018-05-28 21:18:52,431 ERROR [Rotating Log]: No Summary
+2018-05-28 21:18:52,431 ERROR [Rotating Log]: No Summary, Reddit id:8mqe46, category:canada
+None
+2018-05-28 21:19:12,233 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mudo9, category:canada
+2018-05-28 21:19:58,732 ERROR [Rotating Log]: Error on inserting 8mtdpl, category canada
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Chair of the Task Force on Cannabis Legalization and Regulation Anne McLellan and Vice Chair Mark Ware hold a press conference in Ottawa on Tuesday, December 13, 2016, to discuss the report on Cannabis Legalization and Regulation.\nA main figure on the Liberal government\xe2\x80\x99s consulting \xe2\x80\x98task force\xe2...'
+2018-05-28 21:20:00,253 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlr4u, category:canada
+2018-05-28 21:21:31,351 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mvavt, category:canada
+2018-05-28 21:21:55,213 INFO [Rotating Log]: Getting submissions from technology
+2018-05-28 21:24:22,028 INFO [Rotating Log]: Fetched 89 submissions from technology
+2018-05-28 21:27:29,969 ERROR [Rotating Log]: No Summary
+2018-05-28 21:27:29,969 ERROR [Rotating Log]: No Summary, Reddit id:8merzl, category:technology
+None
+2018-05-28 21:29:21,571 INFO [Rotating Log]: Getting submissions from india
+2018-05-28 21:30:55,088 INFO [Rotating Log]: Fetched 56 submissions from india
+2018-05-28 21:32:18,066 ERROR [Rotating Log]: No Summary
+2018-05-28 21:32:18,066 ERROR [Rotating Log]: No Summary, Reddit id:8mupz2, category:india
+None
+2018-05-28 21:32:56,301 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mozgz, category:india
+2018-05-28 21:33:27,720 INFO [Rotating Log]: Getting submissions from china
+2018-05-28 21:34:38,760 INFO [Rotating Log]: Fetched 43 submissions from china
+2018-05-28 21:34:46,492 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-28 21:35:56,747 ERROR [Rotating Log]: No Summary
+2018-05-28 21:35:56,750 ERROR [Rotating Log]: No Summary, Reddit id:8mna1m, category:china
+None
+2018-05-28 22:04:58,096 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mmyv3, category:china
+2018-05-28 22:05:57,482 ERROR [Rotating Log]: No Summary, Reddit id:8mfq6r, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 22:06:17,509 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mfar8, category:china
+2018-05-28 22:06:17,861 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mh9i6, category:china
+2018-05-28 22:06:17,861 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-28 22:09:01,092 INFO [Rotating Log]: Fetched 75 submissions from unitedkingdom
+2018-05-28 22:11:25,086 ERROR [Rotating Log]: No Summary
+2018-05-28 22:11:25,086 ERROR [Rotating Log]: No Summary, Reddit id:8mqmaa, category:unitedkingdom
+None
+2018-05-28 22:13:32,868 ERROR [Rotating Log]: No Summary
+2018-05-28 22:13:32,868 ERROR [Rotating Log]: No Summary, Reddit id:8mgwj9, category:unitedkingdom
+None
+2018-05-28 22:13:32,868 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-28 22:16:02,378 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-28 22:16:02,917 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mtepw, category:upliftingnews
+2018-05-28 22:16:11,868 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mw11w, category:upliftingnews
+2018-05-28 22:16:51,859 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-28 22:17:08,427 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-28 22:17:43,595 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-28 22:18:01,891 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-28 22:18:25,605 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-28 22:18:37,219 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-28 22:18:39,046 ERROR [Rotating Log]: No Summary, Reddit id:8m4wru, category:upliftingnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 22:19:29,351 ERROR [Rotating Log]: No Summary, Reddit id:8lpesa, category:upliftingnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 22:19:37,371 INFO [Rotating Log]: Getting submissions from europe
+2018-05-28 22:22:56,621 INFO [Rotating Log]: Fetched 52 submissions from europe
+2018-05-28 22:22:58,779 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi5c, category:europe
+2018-05-28 22:23:34,596 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msbc8, category:europe
+2018-05-28 22:24:01,270 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-28 22:24:35,474 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mrkqx, category:europe
+2018-05-28 22:25:47,509 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mss61, category:europe
+2018-05-28 22:27:25,234 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mp9yu, category:europe
+2018-05-28 22:27:43,062 ERROR [Rotating Log]: No Summary
+2018-05-28 22:27:43,062 ERROR [Rotating Log]: No Summary, Reddit id:8msvhe, category:europe
+None
+2018-05-28 22:31:10,930 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ms3nc, category:europe
+2018-05-28 22:33:02,799 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mu00g, category:europe
+2018-05-28 22:35:11,657 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mtqln, category:europe
+2018-05-28 22:35:54,329 ERROR [Rotating Log]: No Summary, Reddit id:8mq5v1, category:europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-28 22:38:03,888 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-28 22:39:31,341 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mpp9l, category:europe
+2018-05-28 22:40:14,957 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mqdbn, category:europe
+2018-05-28 22:40:14,957 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-28 23:41:53,298 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-28 23:44:07,263 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-28 23:44:15,045 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mw11w, category:upliftingnews
+2018-05-28 23:45:01,427 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-28 23:45:12,628 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-28 23:45:57,240 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-28 23:46:17,188 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-28 23:46:39,246 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-28 23:46:59,164 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-28 23:48:29,799 INFO [Rotating Log]: Getting submissions from news
+2018-05-28 23:50:19,543 INFO [Rotating Log]: Fetched 100 submissions from news
+2018-05-28 23:50:51,868 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-28 23:50:53,759 ERROR [Rotating Log]: No Summary
+2018-05-28 23:50:53,759 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-28 23:51:08,038 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwgi1, category:news
+2018-05-28 23:51:32,746 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mvmp6, category:news
+2018-05-28 23:51:56,072 ERROR [Rotating Log]: No Summary, Reddit id:8mtfw6, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 175, in summarize_url
+    scores = [score[2] for score in _aggregrate_scores(its, tss, num_sentences)]
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 128, in _aggregrate_scores
+    assert el[1] == le[1]
+AssertionError
+2018-05-28 23:52:51,463 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwysp, category:news
+2018-05-28 23:52:53,730 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlkcg, category:news
+2018-05-28 23:54:26,667 ERROR [Rotating Log]: No Summary
+2018-05-28 23:54:26,668 ERROR [Rotating Log]: No Summary, Reddit id:8mdzja, category:news
+None
+2018-05-28 23:54:31,063 INFO [Rotating Log]: Getting submissions from technology
+2018-05-28 23:56:33,075 INFO [Rotating Log]: Fetched 91 submissions from technology
+2018-05-28 23:59:25,160 ERROR [Rotating Log]: No Summary
+2018-05-28 23:59:25,160 ERROR [Rotating Log]: No Summary, Reddit id:8merzl, category:technology
+None
+2018-05-29 00:01:12,000 INFO [Rotating Log]: Getting submissions from science
+2018-05-29 00:06:07,887 INFO [Rotating Log]: Fetched 99 submissions from science
+2018-05-29 00:10:26,079 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8me98d, category:science
+2018-05-29 00:11:40,092 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcbld, category:science
+2018-05-29 00:12:17,278 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m4wsa, category:science
+2018-05-29 00:14:42,530 ERROR [Rotating Log]: No Summary
+2018-05-29 00:14:42,530 ERROR [Rotating Log]: No Summary, Reddit id:8m14ns, category:science
+None
+2018-05-29 00:15:38,684 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m0wer, category:science
+2018-05-29 00:16:05,905 INFO [Rotating Log]: Getting submissions from europe
+2018-05-29 00:19:37,746 INFO [Rotating Log]: Fetched 55 submissions from europe
+2018-05-29 00:19:38,677 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi5c, category:europe
+2018-05-29 00:19:53,239 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-29 00:20:13,329 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-29 00:20:30,108 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msbc8, category:europe
+2018-05-29 00:20:33,736 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwxk1, category:europe
+2018-05-29 00:20:45,631 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mrkqx, category:europe
+2018-05-29 00:21:09,694 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mss61, category:europe
+2018-05-29 00:21:21,552 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwwc1, category:europe
+2018-05-29 00:21:55,426 ERROR [Rotating Log]: No Summary
+2018-05-29 00:21:55,426 ERROR [Rotating Log]: No Summary, Reddit id:8msvhe, category:europe
+None
+2018-05-29 00:22:27,618 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mp9yu, category:europe
+2018-05-29 00:23:15,650 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mu00g, category:europe
+2018-05-29 00:24:42,559 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ms3nc, category:europe
+2018-05-29 00:26:04,049 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mx1nd, category:europe
+2018-05-29 00:26:33,589 ERROR [Rotating Log]: No Summary, Reddit id:8mq5v1, category:europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 173, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 00:26:36,092 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-29 00:28:43,170 INFO [Rotating Log]: Fetched 100 submissions from worldnews
+2018-05-29 00:32:52,563 INFO [Rotating Log]: Getting submissions from canada
+2018-05-29 00:34:27,907 INFO [Rotating Log]: Fetched 74 submissions from canada
+2018-05-29 00:34:47,039 ERROR [Rotating Log]: No Summary
+2018-05-29 00:34:47,039 ERROR [Rotating Log]: No Summary, Reddit id:8mqe46, category:canada
+None
+2018-05-29 00:34:54,641 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mudo9, category:canada
+2018-05-29 00:35:53,766 ERROR [Rotating Log]: Error on inserting 8mtdpl, category canada
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Chair of the Task Force on Cannabis Legalization and Regulation Anne McLellan and Vice Chair Mark Ware hold a press conference in Ottawa on Tuesday, December 13, 2016, to discuss the report on Cannabis Legalization and Regulation.\nA main figure on the Liberal government\xe2\x80\x99s consulting \xe2\x80\x98task force\xe2...'
+2018-05-29 00:35:58,253 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlr4u, category:canada
+2018-05-29 00:36:48,746 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mvavt, category:canada
+2018-05-29 00:37:38,219 INFO [Rotating Log]: Getting submissions from india
+2018-05-29 00:39:36,095 INFO [Rotating Log]: Fetched 71 submissions from india
+2018-05-29 00:40:23,345 ERROR [Rotating Log]: No Summary
+2018-05-29 00:40:23,345 ERROR [Rotating Log]: No Summary, Reddit id:8mwp5m, category:india
+None
+2018-05-29 18:31:14,832 ERROR [Rotating Log]: Error on inserting 8mx20u, category india
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 550, in _raise_connection_failure
+    _raise_connection_failure(self.address, error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 211, in _raise_connection_failure
+    raise AutoReconnect(msg)
+AutoReconnect: fastnews-shard-00-00-tomkn.mongodb.net:27017: [Errno 10054] An existing connection was forcibly closed by the remote host
+2018-05-29 18:31:24,822 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwc5e, category:india
+2018-05-29 18:34:38,170 ERROR [Rotating Log]: No Summary
+2018-05-29 18:34:38,170 ERROR [Rotating Log]: No Summary, Reddit id:8mupz2, category:india
+None
+2018-05-29 18:35:50,230 INFO [Rotating Log]: Getting submissions from china
+2018-05-29 18:38:20,742 INFO [Rotating Log]: Fetched 47 submissions from china
+2018-05-29 18:39:18,871 ERROR [Rotating Log]: No Summary, Reddit id:8n48qt, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 18:39:28,306 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzuoj, category:china
+2018-05-29 18:40:25,338 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-29 18:44:44,081 ERROR [Rotating Log]: No Summary
+2018-05-29 18:44:44,081 ERROR [Rotating Log]: No Summary, Reddit id:8mna1m, category:china
+None
+2018-05-29 18:44:53,789 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-29 18:51:09,773 INFO [Rotating Log]: Fetched 81 submissions from unitedkingdom
+2018-05-29 18:56:01,111 ERROR [Rotating Log]: No Summary
+2018-05-29 18:56:01,111 ERROR [Rotating Log]: No Summary, Reddit id:8mzm36, category:unitedkingdom
+None
+2018-05-29 18:56:58,494 ERROR [Rotating Log]: No Summary
+2018-05-29 18:56:58,494 ERROR [Rotating Log]: No Summary, Reddit id:8n0ypf, category:unitedkingdom
+None
+2018-05-29 18:59:20,450 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-29 19:09:20,453 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-29 19:11:42,664 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-29 19:13:01,730 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my9h0, category:upliftingnews
+2018-05-29 19:13:07,173 ERROR [Rotating Log]: No Summary
+2018-05-29 19:13:08,621 ERROR [Rotating Log]: No Summary, Reddit id:8mxfqo, category:upliftingnews
+None
+2018-05-29 19:13:24,838 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-29 19:13:37,040 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-29 19:14:22,219 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-29 19:14:44,687 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-29 19:15:24,571 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-29 19:15:52,545 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-29 19:16:32,701 INFO [Rotating Log]: Getting submissions from india
+2018-05-29 19:18:05,621 INFO [Rotating Log]: Fetched 46 submissions from india
+2018-05-29 19:19:00,335 ERROR [Rotating Log]: No Summary
+2018-05-29 19:19:00,335 ERROR [Rotating Log]: No Summary, Reddit id:8mwp5m, category:india
+None
+2018-05-29 19:20:45,204 INFO [Rotating Log]: Getting submissions from science
+2018-05-29 19:25:39,559 INFO [Rotating Log]: Fetched 99 submissions from science
+2018-05-29 19:32:04,153 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mswsh, category:science
+2018-05-29 19:38:46,042 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcbld, category:science
+2018-05-29 19:39:00,908 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-29 19:41:37,161 INFO [Rotating Log]: Fetched 99 submissions from worldnews
+2018-05-29 19:41:47,878 ERROR [Rotating Log]: Error on inserting 8n4d2o, category worldnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Breaking news tonight from Yahoo News Senior Reporter Michael Isakoff that Spanish authorities recently turned over copies of tapes from wiretap surveillance of Russia\xe2\x80\x99s Alexander Torshin, a deputy governor of Russia\xe2\x80\x99s Central Bank who became close to Donald Trump Jr. in May 2016 during the NRA\xe2...'
+2018-05-29 19:42:13,525 ERROR [Rotating Log]: No Summary
+2018-05-29 19:42:13,525 ERROR [Rotating Log]: No Summary, Reddit id:8n1le7, category:worldnews
+None
+2018-05-29 19:43:18,894 ERROR [Rotating Log]: No Summary
+2018-05-29 19:43:18,894 ERROR [Rotating Log]: No Summary, Reddit id:8n41lv, category:worldnews
+None
+2018-05-29 19:44:20,851 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzxfk, category:worldnews
+2018-05-29 19:47:13,530 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-29 19:50:38,808 INFO [Rotating Log]: Fetched 81 submissions from unitedkingdom
+2018-05-29 19:51:16,036 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my7tc, category:unitedkingdom
+2018-05-29 19:54:55,546 ERROR [Rotating Log]: No Summary
+2018-05-29 19:54:55,546 ERROR [Rotating Log]: No Summary, Reddit id:8mzm36, category:unitedkingdom
+None
+2018-05-29 19:55:38,447 ERROR [Rotating Log]: No Summary
+2018-05-29 19:55:38,447 ERROR [Rotating Log]: No Summary, Reddit id:8n0ypf, category:unitedkingdom
+None
+2018-05-29 19:58:38,930 INFO [Rotating Log]: Getting submissions from canada
+2018-05-29 20:01:13,954 INFO [Rotating Log]: Fetched 78 submissions from canada
+2018-05-29 20:02:46,796 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n43un, category:canada
+2018-05-29 20:06:10,168 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myywk, category:canada
+2018-05-29 20:07:19,783 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mudo9, category:canada
+2018-05-29 20:07:34,884 INFO [Rotating Log]: Getting submissions from china
+2018-05-29 20:09:37,729 INFO [Rotating Log]: Fetched 48 submissions from china
+2018-05-29 20:09:50,756 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n4o01, category:china
+2018-05-29 20:10:51,240 ERROR [Rotating Log]: No Summary, Reddit id:8n48qt, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 20:11:16,604 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzuoj, category:china
+2018-05-29 20:12:22,872 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-29 20:14:06,207 INFO [Rotating Log]: Getting submissions from europe
+2018-05-29 20:18:46,936 INFO [Rotating Log]: Fetched 57 submissions from europe
+2018-05-29 20:19:02,243 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n358t, category:europe
+2018-05-29 20:21:00,744 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mypie, category:europe
+2018-05-29 20:21:17,398 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mxzoq, category:europe
+2018-05-29 20:23:01,581 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mx1nd, category:europe
+2018-05-29 20:24:09,081 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-29 20:24:40,480 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwwc1, category:europe
+2018-05-29 20:26:23,660 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n19qr, category:europe
+2018-05-29 20:26:47,638 ERROR [Rotating Log]: No Summary
+2018-05-29 20:26:47,638 ERROR [Rotating Log]: No Summary, Reddit id:8n56uj, category:europe
+None
+2018-05-29 20:27:00,684 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-29 20:27:48,839 INFO [Rotating Log]: Getting submissions from technology
+2018-05-29 20:33:38,681 INFO [Rotating Log]: Fetched 94 submissions from technology
+2018-05-29 20:33:42,078 ERROR [Rotating Log]: No Summary
+2018-05-29 20:33:42,078 ERROR [Rotating Log]: No Summary, Reddit id:8mygh3, category:technology
+None
+2018-05-29 20:34:36,819 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n1zxz, category:technology
+2018-05-29 20:35:50,319 ERROR [Rotating Log]: No Summary
+2018-05-29 20:35:50,319 ERROR [Rotating Log]: No Summary, Reddit id:8n3cpp, category:technology
+None
+2018-05-29 20:36:38,127 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mz0op, category:technology
+2018-05-29 20:36:39,243 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myz85, category:technology
+2018-05-29 20:54:44,779 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzrsj, category:technology
+2018-05-29 20:55:21,822 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mtm7n, category:technology
+2018-05-29 20:56:49,941 INFO [Rotating Log]: Getting submissions from news
+2018-05-29 20:59:01,732 INFO [Rotating Log]: Fetched 99 submissions from news
+2018-05-29 21:00:09,148 ERROR [Rotating Log]: No Summary, Reddit id:8n04r5, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 21:00:52,976 ERROR [Rotating Log]: No Summary
+2018-05-29 21:00:52,976 ERROR [Rotating Log]: No Summary, Reddit id:8myujm, category:news
+None
+2018-05-29 21:01:56,657 ERROR [Rotating Log]: No Summary
+2018-05-29 21:01:56,657 ERROR [Rotating Log]: No Summary, Reddit id:8n3wju, category:news
+None
+2018-05-29 21:02:10,243 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwgi1, category:news
+2018-05-29 21:04:30,940 ERROR [Rotating Log]: No Summary
+2018-05-29 21:04:33,345 ERROR [Rotating Log]: No Summary, Reddit id:8myse6, category:news
+None
+2018-05-29 21:04:36,009 ERROR [Rotating Log]: No Summary
+2018-05-29 21:04:36,009 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-29 21:04:48,335 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-29 21:05:07,451 ERROR [Rotating Log]: No Summary, Reddit id:8mxgd6, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 170, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 21:05:10,690 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-29 21:15:10,690 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-29 21:18:05,601 INFO [Rotating Log]: Fetched 99 submissions from worldnews
+2018-05-29 21:18:06,796 ERROR [Rotating Log]: Error on inserting 8n4d2o, category worldnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Breaking news tonight from Yahoo News Senior Reporter Michael Isakoff that Spanish authorities recently turned over copies of tapes from wiretap surveillance of Russia\xe2\x80\x99s Alexander Torshin, a deputy governor of Russia\xe2\x80\x99s Central Bank who became close to Donald Trump Jr. in May 2016 during the NRA\xe2...'
+2018-05-29 21:18:40,447 ERROR [Rotating Log]: No Summary
+2018-05-29 21:18:40,447 ERROR [Rotating Log]: No Summary, Reddit id:8n1le7, category:worldnews
+None
+2018-05-29 21:19:41,648 ERROR [Rotating Log]: No Summary
+2018-05-29 21:19:41,648 ERROR [Rotating Log]: No Summary, Reddit id:8n41lv, category:worldnews
+None
+2018-05-29 21:22:46,217 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzxfk, category:worldnews
+2018-05-29 21:24:21,779 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzlix, category:worldnews
+2018-05-29 21:25:52,142 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-29 21:29:21,987 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-29 21:30:57,296 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my9h0, category:upliftingnews
+2018-05-29 21:31:02,164 ERROR [Rotating Log]: No Summary
+2018-05-29 21:31:02,165 ERROR [Rotating Log]: No Summary, Reddit id:8mxfqo, category:upliftingnews
+None
+2018-05-29 21:31:12,020 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-29 21:31:32,240 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-29 21:32:18,776 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-29 21:32:39,378 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-29 21:33:13,467 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-29 21:33:39,842 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-29 21:34:10,691 INFO [Rotating Log]: Getting submissions from china
+2018-05-29 21:36:07,961 INFO [Rotating Log]: Fetched 48 submissions from china
+2018-05-29 21:36:15,456 ERROR [Rotating Log]: No Summary, Reddit id:8n4o01, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 170, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 21:37:17,473 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzuoj, category:china
+2018-05-29 21:37:21,390 ERROR [Rotating Log]: No Summary, Reddit id:8n48qt, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 21:37:52,967 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-29 21:39:07,648 INFO [Rotating Log]: Getting submissions from science
+2018-05-29 21:39:38,743 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 25, in get_submissions
+    t = submission_details(submission, subreddit)
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 42, in submission_details
+    article.parse()
+  File "C:\Python27\lib\site-packages\newspaper\article.py", line 228, in parse
+    self.fetch_images()
+  File "C:\Python27\lib\site-packages\newspaper\article.py", line 247, in fetch_images
+    self.set_top_img(first_img)
+  File "C:\Python27\lib\site-packages\newspaper\article.py", line 402, in set_top_img
+    if s.satisfies_requirements(src_url):
+  File "C:\Python27\lib\site-packages\newspaper\images.py", line 223, in satisfies_requirements
+    img_url, self.useragent, referer=self.url)
+  File "C:\Python27\lib\site-packages\newspaper\images.py", line 166, in fetch_image_dimension
+    return fetch_url(url, useragent, referer, retries, dimension=True)
+  File "C:\Python27\lib\site-packages\newspaper\images.py", line 105, in fetch_url
+    content = open_req.read(chunk_size)
+  File "C:\Python27\lib\socket.py", line 384, in read
+    data = self._sock.recv(left)
+  File "C:\Python27\lib\httplib.py", line 612, in read
+    s = self.fp.read(amt)
+  File "C:\Python27\lib\socket.py", line 384, in read
+    data = self._sock.recv(left)
+  File "C:\Python27\lib\ssl.py", line 756, in recv
+    return self.read(buflen)
+  File "C:\Python27\lib\ssl.py", line 643, in read
+    v = self._sslobj.read(len)
+SSLError: ('The read operation timed out',)
+2018-05-29 21:39:40,463 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-29 21:42:43,045 INFO [Rotating Log]: Fetched 81 submissions from unitedkingdom
+2018-05-29 21:43:11,661 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myihj, category:unitedkingdom
+2018-05-29 21:45:42,999 ERROR [Rotating Log]: No Summary
+2018-05-29 21:45:42,999 ERROR [Rotating Log]: No Summary, Reddit id:8mzm36, category:unitedkingdom
+None
+2018-05-29 21:46:17,457 ERROR [Rotating Log]: No Summary
+2018-05-29 21:46:17,457 ERROR [Rotating Log]: No Summary, Reddit id:8n0ypf, category:unitedkingdom
+None
+2018-05-29 21:47:45,177 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mpllg, category:unitedkingdom
+2018-05-29 21:48:48,618 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mq86v, category:unitedkingdom
+2018-05-29 21:49:10,717 INFO [Rotating Log]: Getting submissions from india
+2018-05-29 21:50:25,187 INFO [Rotating Log]: Fetched 48 submissions from india
+2018-05-29 21:51:16,137 ERROR [Rotating Log]: No Summary
+2018-05-29 21:51:16,137 ERROR [Rotating Log]: No Summary, Reddit id:8n0vxm, category:india
+None
+2018-05-29 21:51:22,671 ERROR [Rotating Log]: No Summary
+2018-05-29 21:51:23,141 ERROR [Rotating Log]: No Summary, Reddit id:8mwp5m, category:india
+None
+2018-05-29 21:52:18,131 INFO [Rotating Log]: Getting submissions from europe
+2018-05-29 21:56:00,760 INFO [Rotating Log]: Fetched 57 submissions from europe
+2018-05-29 21:56:36,246 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n358t, category:europe
+2018-05-29 21:58:23,559 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mypie, category:europe
+2018-05-29 21:58:38,734 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mxzoq, category:europe
+2018-05-29 21:59:52,480 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mx1nd, category:europe
+2018-05-29 22:00:35,329 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-29 22:01:03,936 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n1bax, category:europe
+2018-05-29 22:01:16,357 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwwc1, category:europe
+2018-05-29 22:01:57,410 ERROR [Rotating Log]: No Summary
+2018-05-29 22:01:57,411 ERROR [Rotating Log]: No Summary, Reddit id:8n56uj, category:europe
+None
+2018-05-29 22:02:42,493 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n19qr, category:europe
+2018-05-29 22:02:52,746 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n1ad2, category:europe
+2018-05-29 22:03:33,249 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-29 22:03:48,552 ERROR [Rotating Log]: No Summary, Reddit id:8n1two, category:europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 22:04:05,947 INFO [Rotating Log]: Getting submissions from news
+2018-05-29 22:06:07,477 INFO [Rotating Log]: Fetched 99 submissions from news
+2018-05-29 22:06:57,795 ERROR [Rotating Log]: No Summary, Reddit id:8n04r5, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 22:07:05,401 ERROR [Rotating Log]: No Summary, Reddit id:8n21ft, category:news
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 170, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 22:07:12,710 ERROR [Rotating Log]: No Summary
+2018-05-29 22:07:12,710 ERROR [Rotating Log]: No Summary, Reddit id:8myujm, category:news
+None
+2018-05-29 22:07:38,049 ERROR [Rotating Log]: No Summary
+2018-05-29 22:07:38,049 ERROR [Rotating Log]: No Summary, Reddit id:8n3wju, category:news
+None
+2018-05-29 22:07:49,805 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwgi1, category:news
+2018-05-29 22:10:10,371 ERROR [Rotating Log]: No Summary
+2018-05-29 22:10:10,371 ERROR [Rotating Log]: No Summary, Reddit id:8myse6, category:news
+None
+2018-05-29 22:10:14,433 ERROR [Rotating Log]: No Summary
+2018-05-29 22:10:14,433 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-29 22:10:35,865 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-29 22:10:48,522 INFO [Rotating Log]: Getting submissions from canada
+2018-05-29 22:13:15,746 INFO [Rotating Log]: Fetched 78 submissions from canada
+2018-05-29 22:14:01,467 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n43un, category:canada
+2018-05-29 22:15:34,714 ERROR [Rotating Log]: No Summary
+2018-05-29 22:15:34,717 ERROR [Rotating Log]: No Summary, Reddit id:8n5815, category:canada
+None
+2018-05-29 22:18:12,209 INFO [Rotating Log]: Getting submissions from technology
+2018-05-29 22:22:26,960 INFO [Rotating Log]: Fetched 94 submissions from technology
+2018-05-29 22:22:29,253 ERROR [Rotating Log]: No Summary
+2018-05-29 22:22:30,069 ERROR [Rotating Log]: No Summary, Reddit id:8mygh3, category:technology
+None
+2018-05-29 22:24:12,234 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myte5, category:technology
+2018-05-29 22:24:44,924 ERROR [Rotating Log]: No Summary
+2018-05-29 22:24:44,926 ERROR [Rotating Log]: No Summary, Reddit id:8n3cpp, category:technology
+None
+2018-05-29 22:25:20,183 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mz0op, category:technology
+2018-05-29 22:25:21,375 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myz85, category:technology
+2018-05-29 22:30:38,170 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzrsj, category:technology
+2018-05-29 22:31:35,296 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-29 22:41:38,882 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-29 22:44:31,842 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-29 22:46:16,282 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my9h0, category:upliftingnews
+2018-05-29 22:46:22,398 ERROR [Rotating Log]: No Summary
+2018-05-29 22:46:22,398 ERROR [Rotating Log]: No Summary, Reddit id:8mxfqo, category:upliftingnews
+None
+2018-05-29 22:46:34,569 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-29 22:46:49,022 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-29 22:47:36,944 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-29 22:48:00,967 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-29 22:48:28,348 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-29 22:48:51,483 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-29 22:49:17,812 INFO [Rotating Log]: Getting submissions from india
+2018-05-29 22:50:32,289 INFO [Rotating Log]: Fetched 47 submissions from india
+2018-05-29 22:51:28,487 ERROR [Rotating Log]: No Summary
+2018-05-29 22:51:28,487 ERROR [Rotating Log]: No Summary, Reddit id:8n0vxm, category:india
+None
+2018-05-29 22:51:48,181 ERROR [Rotating Log]: No Summary
+2018-05-29 22:51:48,183 ERROR [Rotating Log]: No Summary, Reddit id:8mwp5m, category:india
+None
+2018-05-29 22:53:44,042 INFO [Rotating Log]: Getting submissions from science
+2018-05-29 22:58:28,516 INFO [Rotating Log]: Fetched 99 submissions from science
+2018-05-29 23:03:52,806 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mswsh, category:science
+2018-05-29 23:09:15,401 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcbld, category:science
+2018-05-29 23:09:23,269 INFO [Rotating Log]: Getting submissions from news
+2018-05-29 23:11:40,533 INFO [Rotating Log]: Fetched 99 submissions from news
+2018-05-29 23:12:24,017 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n21ft, category:news
+2018-05-29 23:12:33,154 ERROR [Rotating Log]: No Summary
+2018-05-29 23:12:33,154 ERROR [Rotating Log]: No Summary, Reddit id:8myujm, category:news
+None
+2018-05-29 23:12:57,046 ERROR [Rotating Log]: No Summary
+2018-05-29 23:12:57,046 ERROR [Rotating Log]: No Summary, Reddit id:8n3wju, category:news
+None
+2018-05-29 23:13:18,795 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwgi1, category:news
+2018-05-29 23:15:05,272 ERROR [Rotating Log]: No Summary
+2018-05-29 23:15:05,272 ERROR [Rotating Log]: No Summary, Reddit id:8myse6, category:news
+None
+2018-05-29 23:15:08,413 ERROR [Rotating Log]: No Summary
+2018-05-29 23:15:08,414 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-29 23:15:20,956 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-29 23:15:40,122 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-29 23:18:17,223 INFO [Rotating Log]: Fetched 82 submissions from unitedkingdom
+2018-05-29 23:20:33,372 ERROR [Rotating Log]: No Summary
+2018-05-29 23:20:33,372 ERROR [Rotating Log]: No Summary, Reddit id:8mzm36, category:unitedkingdom
+None
+2018-05-29 23:21:41,598 ERROR [Rotating Log]: No Summary
+2018-05-29 23:21:41,598 ERROR [Rotating Log]: No Summary, Reddit id:8n0ypf, category:unitedkingdom
+None
+2018-05-29 23:23:40,296 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-29 23:25:33,859 INFO [Rotating Log]: Fetched 99 submissions from worldnews
+2018-05-29 23:25:34,854 ERROR [Rotating Log]: Error on inserting 8n4d2o, category worldnews
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: 'Breaking news tonight from Yahoo News Senior Reporter Michael Isakoff that Spanish authorities recently turned over copies of tapes from wiretap surveillance of Russia\xe2\x80\x99s Alexander Torshin, a deputy governor of Russia\xe2\x80\x99s Central Bank who became close to Donald Trump Jr. in May 2016 during the NRA\xe2...'
+2018-05-29 23:25:56,392 ERROR [Rotating Log]: No Summary
+2018-05-29 23:25:56,394 ERROR [Rotating Log]: No Summary, Reddit id:8n1le7, category:worldnews
+None
+2018-05-29 23:26:33,792 ERROR [Rotating Log]: No Summary
+2018-05-29 23:26:33,792 ERROR [Rotating Log]: No Summary, Reddit id:8n41lv, category:worldnews
+None
+2018-05-29 23:28:07,384 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzxfk, category:worldnews
+2018-05-29 23:29:25,743 INFO [Rotating Log]: Getting submissions from europe
+2018-05-29 23:33:06,759 INFO [Rotating Log]: Fetched 58 submissions from europe
+2018-05-29 23:33:16,619 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n358t, category:europe
+2018-05-29 23:35:15,111 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mypie, category:europe
+2018-05-29 23:35:30,032 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mxzoq, category:europe
+2018-05-29 23:37:09,115 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mx1nd, category:europe
+2018-05-29 23:37:59,260 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-29 23:38:26,706 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwwc1, category:europe
+2018-05-29 23:39:29,723 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n19qr, category:europe
+2018-05-29 23:39:39,872 ERROR [Rotating Log]: No Summary
+2018-05-29 23:39:39,874 ERROR [Rotating Log]: No Summary, Reddit id:8n56uj, category:europe
+None
+2018-05-29 23:40:11,201 ERROR [Rotating Log]: Error on inserting 8mu53v, category europe
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 552, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '^ [5]: 85 According to Sphrantzes, whom Constantine had ordered to make a census, the Emperor was appalled when the number of native men capable of bearing arms turned out to be only 4,983.\n^ [5]: 84 Runciman speculates that he may have been Scottish ^ [55] Original text: \xce\xa4\xe1\xbd\xb8 \xce\xb4\xe1\xbd\xb2 \xcf\x84\xe1\xbd\xb4\xce\xbd \xcf\x80\xcf\x8c\xce\xbb\xce...'
+2018-05-29 23:40:32,111 INFO [Rotating Log]: Getting submissions from china
+2018-05-29 23:42:22,734 INFO [Rotating Log]: Fetched 48 submissions from china
+2018-05-29 23:43:24,790 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzuoj, category:china
+2018-05-29 23:43:26,434 ERROR [Rotating Log]: No Summary, Reddit id:8n48qt, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-29 23:44:07,234 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mv5r8, category:china
+2018-05-29 23:45:17,990 INFO [Rotating Log]: Getting submissions from canada
+2018-05-29 23:47:09,141 INFO [Rotating Log]: Fetched 77 submissions from canada
+2018-05-29 23:47:50,540 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n43un, category:canada
+2018-05-29 23:48:56,746 ERROR [Rotating Log]: No Summary
+2018-05-29 23:48:56,746 ERROR [Rotating Log]: No Summary, Reddit id:8n5815, category:canada
+None
+2018-05-29 23:50:55,076 INFO [Rotating Log]: Getting submissions from technology
+2018-05-29 23:56:48,532 INFO [Rotating Log]: Fetched 94 submissions from technology
+2018-05-29 23:56:52,584 ERROR [Rotating Log]: No Summary
+2018-05-29 23:56:52,584 ERROR [Rotating Log]: No Summary, Reddit id:8mygh3, category:technology
+None
+2018-05-29 23:59:04,306 ERROR [Rotating Log]: No Summary
+2018-05-29 23:59:04,308 ERROR [Rotating Log]: No Summary, Reddit id:8n3cpp, category:technology
+None
+2018-05-29 23:59:58,091 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mz0op, category:technology
+2018-05-29 23:59:59,328 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myz85, category:technology
+2018-05-30 00:08:43,951 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzrsj, category:technology
+2018-05-30 00:09:57,773 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-05-30 00:19:57,779 INFO [Rotating Log]: Getting submissions from europe
+2018-05-30 00:25:05,802 INFO [Rotating Log]: Fetched 55 submissions from europe
+2018-05-30 00:25:15,987 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n358t, category:europe
+2018-05-30 00:27:29,892 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mypie, category:europe
+2018-05-30 00:27:56,394 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mxzoq, category:europe
+2018-05-30 00:30:21,311 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mx1nd, category:europe
+2018-05-30 00:31:13,204 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwkaj, category:europe
+2018-05-30 00:31:26,838 ERROR [Rotating Log]: No Summary
+2018-05-30 00:31:26,838 ERROR [Rotating Log]: No Summary, Reddit id:8n56uj, category:europe
+None
+2018-05-30 00:31:56,483 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwwc1, category:europe
+2018-05-30 00:33:22,997 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n19qr, category:europe
+2018-05-30 00:34:24,802 INFO [Rotating Log]: Getting submissions from canada
+2018-05-30 00:36:56,082 INFO [Rotating Log]: Fetched 79 submissions from canada
+2018-05-30 00:37:53,589 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8n43un, category:canada
+2018-05-30 00:39:30,836 ERROR [Rotating Log]: No Summary
+2018-05-30 00:39:30,838 ERROR [Rotating Log]: No Summary, Reddit id:8n5815, category:canada
+None
+2018-05-30 00:42:23,970 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-30 00:45:01,164 INFO [Rotating Log]: Fetched 98 submissions from upliftingnews
+2018-05-30 00:46:51,726 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my9h0, category:upliftingnews
+2018-05-30 00:46:58,150 ERROR [Rotating Log]: No Summary
+2018-05-30 00:46:58,150 ERROR [Rotating Log]: No Summary, Reddit id:8mxfqo, category:upliftingnews
+None
+2018-05-30 00:47:10,641 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-05-30 00:47:25,141 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-05-30 00:48:11,967 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mffo3, category:upliftingnews
+2018-05-30 00:48:33,308 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcex6, category:upliftingnews
+2018-05-30 00:49:02,200 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8m9i33, category:upliftingnews
+2018-05-30 00:49:23,934 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mcxoi, category:upliftingnews
+2018-05-30 00:49:51,312 INFO [Rotating Log]: Getting submissions from india
+2018-05-30 00:51:57,430 INFO [Rotating Log]: Fetched 48 submissions from india
+2018-05-30 00:54:08,595 ERROR [Rotating Log]: No Summary
+2018-05-30 00:54:08,595 ERROR [Rotating Log]: No Summary, Reddit id:8n0vxm, category:india
+None
+2018-05-30 00:54:46,124 ERROR [Rotating Log]: No Summary
+2018-05-30 00:54:46,125 ERROR [Rotating Log]: No Summary, Reddit id:8mwp5m, category:india
+None
+2018-05-30 00:54:46,125 INFO [Rotating Log]: Getting submissions from news
+2018-05-30 00:57:15,786 INFO [Rotating Log]: Fetched 99 submissions from news
+2018-05-30 00:58:25,533 ERROR [Rotating Log]: No Summary
+2018-05-30 00:58:25,533 ERROR [Rotating Log]: No Summary, Reddit id:8myujm, category:news
+None
+2018-05-30 00:58:51,913 ERROR [Rotating Log]: No Summary
+2018-05-30 00:58:51,913 ERROR [Rotating Log]: No Summary, Reddit id:8n3wju, category:news
+None
+2018-05-30 00:59:26,342 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mwgi1, category:news
+2018-05-30 01:01:26,154 ERROR [Rotating Log]: No Summary
+2018-05-30 01:01:26,154 ERROR [Rotating Log]: No Summary, Reddit id:8myse6, category:news
+None
+2018-05-30 01:01:29,267 ERROR [Rotating Log]: No Summary
+2018-05-30 01:01:29,267 ERROR [Rotating Log]: No Summary, Reddit id:8mv15o, category:news
+None
+2018-05-30 01:01:48,101 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8msi9c, category:news
+2018-05-30 01:01:59,744 INFO [Rotating Log]: Getting submissions from technology
+2018-05-30 01:08:37,497 INFO [Rotating Log]: Fetched 94 submissions from technology
+2018-05-30 01:08:41,154 ERROR [Rotating Log]: No Summary
+2018-05-30 01:08:42,467 ERROR [Rotating Log]: No Summary, Reddit id:8mygh3, category:technology
+None
+2018-05-30 01:10:34,960 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8myte5, category:technology
+2018-05-30 01:11:13,915 ERROR [Rotating Log]: No Summary
+2018-05-30 01:11:13,917 ERROR [Rotating Log]: No Summary, Reddit id:8n3cpp, category:technology
+None
+2018-05-31 22:52:51,736 INFO [Rotating Log]: Getting submissions from europe
+2018-05-31 22:56:33,744 INFO [Rotating Log]: Fetched 55 submissions from europe
+2018-05-31 22:56:38,362 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nh94j, category:europe
+2018-05-31 22:57:26,246 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nhf7q, category:europe
+2018-05-31 22:57:37,209 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nmzmk, category:europe
+2018-05-31 22:59:12,678 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ngizt, category:europe
+2018-05-31 23:02:15,811 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ng60k, category:europe
+2018-05-31 23:03:24,819 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nhxbs, category:europe
+2018-05-31 23:03:47,693 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nlsgk, category:europe
+2018-05-31 23:04:05,905 INFO [Rotating Log]: Getting submissions from canada
+2018-05-31 23:06:47,743 INFO [Rotating Log]: Fetched 72 submissions from canada
+2018-05-31 23:06:56,832 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nkji5, category:canada
+2018-05-31 23:07:02,313 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nndi9, category:canada
+2018-05-31 23:07:41,496 ERROR [Rotating Log]: No Summary
+2018-05-31 23:07:41,497 ERROR [Rotating Log]: No Summary, Reddit id:8nna4t, category:canada
+None
+2018-05-31 23:09:34,039 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8njknr, category:canada
+2018-05-31 23:10:47,210 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-05-31 23:13:57,141 INFO [Rotating Log]: Fetched 84 submissions from unitedkingdom
+2018-05-31 23:18:50,247 ERROR [Rotating Log]: No Summary
+2018-05-31 23:18:50,247 ERROR [Rotating Log]: No Summary, Reddit id:8n9a12, category:unitedkingdom
+None
+2018-05-31 23:19:26,331 INFO [Rotating Log]: Getting submissions from news
+2018-05-31 23:21:09,401 INFO [Rotating Log]: Fetched 96 submissions from news
+2018-05-31 23:22:57,444 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nogj7, category:news
+2018-05-31 23:25:18,313 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nplmw, category:news
+2018-05-31 23:25:34,971 INFO [Rotating Log]: Getting submissions from worldnews
+2018-05-31 23:27:48,380 INFO [Rotating Log]: Fetched 100 submissions from worldnews
+2018-05-31 23:28:35,194 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nlp8t, category:worldnews
+2018-05-31 23:28:39,910 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nlckt, category:worldnews
+2018-05-31 23:29:54,341 ERROR [Rotating Log]: No Summary
+2018-05-31 23:29:54,341 ERROR [Rotating Log]: No Summary, Reddit id:8nohqa, category:worldnews
+None
+2018-05-31 23:30:32,948 ERROR [Rotating Log]: No Summary
+2018-05-31 23:30:32,948 ERROR [Rotating Log]: No Summary, Reddit id:8npi41, category:worldnews
+None
+2018-05-31 23:32:14,513 INFO [Rotating Log]: Getting submissions from india
+2018-05-31 23:33:33,259 INFO [Rotating Log]: Fetched 46 submissions from india
+2018-05-31 23:33:53,882 ERROR [Rotating Log]: No Summary
+2018-05-31 23:33:53,884 ERROR [Rotating Log]: No Summary, Reddit id:8nk3qd, category:india
+None
+2018-05-31 23:34:06,993 ERROR [Rotating Log]: No Summary
+2018-05-31 23:34:06,993 ERROR [Rotating Log]: No Summary, Reddit id:8nnwfi, category:india
+None
+2018-05-31 23:34:37,984 ERROR [Rotating Log]: No Summary
+2018-05-31 23:34:37,986 ERROR [Rotating Log]: No Summary, Reddit id:8npiei, category:india
+None
+2018-05-31 23:36:07,713 INFO [Rotating Log]: Getting submissions from china
+2018-05-31 23:39:50,483 INFO [Rotating Log]: Fetched 49 submissions from china
+2018-05-31 23:45:21,670 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8no8k7, category:china
+2018-05-31 23:46:54,598 ERROR [Rotating Log]: No Summary, Reddit id:8n4o01, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 170, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-31 23:48:13,138 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mzuoj, category:china
+2018-05-31 23:48:19,332 ERROR [Rotating Log]: No Summary, Reddit id:8n48qt, category:china
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\summarize.py", line 12, in summarize
+    summarizer_object = summarize_smrzr(submission.get('url'))
+  File "E:\Projects\News_Backend_temp\summarize.py", line 30, in summarize_smrzr
+    summarized_article = smrzr.Summarizer(url, 4, 'default', 'newspaper')
+  File "E:\Projects\News_Backend_temp\smrzr\ui.py", line 23, in __init__
+    summarize_url(self.url, num_sentences, fmt)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 167, in summarize_url
+    its, tss = _remove_title_from_tuples(its, tss)
+  File "E:\Projects\News_Backend_temp\smrzr\core.py", line 114, in _remove_title_from_tuples
+    assert el[2] == tss[0][2], "fatal: tss and its don't align"
+AssertionError: fatal: tss and its don't align
+2018-05-31 23:48:22,898 INFO [Rotating Log]: Getting submissions from technology
+2018-05-31 23:51:16,529 INFO [Rotating Log]: Fetched 98 submissions from technology
+2018-05-31 23:51:24,302 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8norry, category:technology
+2018-05-31 23:52:13,201 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nm5jp, category:technology
+2018-05-31 23:55:35,841 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nn04z, category:technology
+2018-05-31 23:57:16,119 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ndvc1, category:technology
+2018-05-31 23:57:36,884 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-05-31 23:59:58,801 INFO [Rotating Log]: Fetched 100 submissions from upliftingnews
+2018-06-01 00:03:18,289 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8my9h0, category:upliftingnews
+2018-06-01 00:03:36,098 ERROR [Rotating Log]: No Summary
+2018-06-01 00:03:36,101 ERROR [Rotating Log]: No Summary, Reddit id:8mxfqo, category:upliftingnews
+None
+2018-06-01 00:03:37,744 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mevp0, category:upliftingnews
+2018-06-01 00:03:49,387 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8mlfha, category:upliftingnews
+2018-06-01 00:04:06,671 INFO [Rotating Log]: Getting submissions from science
+2018-06-01 00:08:03,095 INFO [Rotating Log]: Fetched 98 submissions from science
+2018-06-01 00:09:10,253 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nop6b, category:science
+2018-06-01 00:12:29,105 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8npjxs, category:science
+2018-06-01 00:14:08,157 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nk8io, category:science
+2018-06-01 00:15:57,375 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ngkky, category:science
+2018-06-01 00:17:07,657 INFO [Rotating Log]: Sleeping for 10 minutes
+2018-06-01 00:27:07,658 INFO [Rotating Log]: Getting submissions from news
+2018-06-01 00:28:51,253 INFO [Rotating Log]: Fetched 97 submissions from news
+2018-06-01 00:29:42,492 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nogj7, category:news
+2018-06-01 00:32:07,461 INFO [Rotating Log]: Getting submissions from india
+2018-06-01 00:33:32,542 INFO [Rotating Log]: Fetched 48 submissions from india
+2018-06-01 00:33:57,411 ERROR [Rotating Log]: No Summary
+2018-06-01 00:33:57,413 ERROR [Rotating Log]: No Summary, Reddit id:8nk3qd, category:india
+None
+2018-06-01 00:34:03,138 ERROR [Rotating Log]: No Summary
+2018-06-01 00:34:03,138 ERROR [Rotating Log]: No Summary, Reddit id:8nnwfi, category:india
+None
+2018-06-01 00:37:05,859 ERROR [Rotating Log]: Error on inserting 8nps2g, category india
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\insert.py", line 27, in insert
+    collection.insert_one(insert_object)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 657, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 562, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "C:\Python27\lib\site-packages\pymongo\collection.py", line 543, in _insert_one
+    check_keys=check_keys)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 424, in command
+    self._raise_connection_failure(error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 550, in _raise_connection_failure
+    _raise_connection_failure(self.address, error)
+  File "C:\Python27\lib\site-packages\pymongo\pool.py", line 211, in _raise_connection_failure
+    raise AutoReconnect(msg)
+AutoReconnect: fastnews-shard-00-00-tomkn.mongodb.net:27017: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2018-06-01 00:38:10,648 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8nps1h, category:india
+2018-06-01 00:38:10,720 ERROR [Rotating Log]: Article Extraction Fail, Reddit id:8ngajp, category:india
+2018-06-01 00:38:10,720 INFO [Rotating Log]: Getting submissions from worldnews
+2018-06-01 00:38:10,727 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x12924630>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:13,335 INFO [Rotating Log]: Getting submissions from science
+2018-06-01 00:38:13,351 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x128BFED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:13,357 INFO [Rotating Log]: Getting submissions from technology
+2018-06-01 00:38:15,349 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x128BF8F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:15,352 INFO [Rotating Log]: Getting submissions from europe
+2018-06-01 00:38:17,355 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x128BF510>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:17,358 INFO [Rotating Log]: Getting submissions from china
+2018-06-01 00:38:19,352 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x1284C790>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:19,355 INFO [Rotating Log]: Getting submissions from canada
+2018-06-01 00:38:21,351 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x1284CFF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:21,355 INFO [Rotating Log]: Getting submissions from upliftingnews
+2018-06-01 00:38:23,365 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x128441B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:23,368 INFO [Rotating Log]: Getting submissions from unitedkingdom
+2018-06-01 00:38:25,368 ERROR [Rotating Log]: Something went wrong!
+Traceback (most recent call last):
+  File "E:\Projects\News_Backend_temp\fetch_submissions.py", line 20, in get_submissions
+    refresh_token=secret.news_refresh_token, scopes=scopes)
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 57, in __init__
+    self._set_access_credentials_first_time()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 78, in _set_access_credentials_first_time
+    self._set_access_credentials()
+  File "C:\Python27\lib\site-packages\prawoauth2\PrawOAuth2Mini.py", line 73, in _set_access_credentials
+    refresh_token=self.refresh_token)
+  File "<decorator-gen-52>", line 2, in set_access_credentials
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 285, in require_oauth
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1508, in set_access_credentials
+    self.user = self.get_me()
+  File "<decorator-gen-47>", line 2, in get_me
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 268, in wrap
+    return function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 1346, in get_me
+    response = self.request_json(self.config['me'])
+  File "<decorator-gen-8>", line 2, in request_json
+  File "C:\Python27\lib\site-packages\praw\decorators.py", line 113, in raise_api_exceptions
+    return_value = function(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 612, in request_json
+    retry_on_error=retry_on_error)
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 444, in _request
+    response = handle_redirect()
+  File "C:\Python27\lib\site-packages\praw\__init__.py", line 425, in handle_redirect
+    verify=self.http.validate_certs, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 148, in wrapped
+    result = function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 57, in wrapped
+    return function(cls, **kwargs)
+  File "C:\Python27\lib\site-packages\praw\handlers.py", line 103, in request
+    allow_redirects=False, verify=verify)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 487, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='oauth.reddit.com', port=443): Max retries exceeded with url: /api/v1/me.json (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x12844330>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+2018-06-01 00:38:25,372 INFO [Rotating Log]: Sleeping for 10 minutes

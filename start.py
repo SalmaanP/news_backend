@@ -1,34 +1,23 @@
-__author__ = 'salmaan'
+import fetch_submissions
+from setup_logger import setup_logger
+import summarize
+from insert import insert
+import time
+import random
 
-import NAS as c
-from time import sleep
-from datetime import datetime
-
-count = 0
+logger = setup_logger()
+sleep = 10*60
 categories = ['technology', 'worldnews', 'india', 'science', 'news', 'canada', 'unitedkingdom', 'upliftingnews', 'europe', 'china']
+
 while True:
+    random.shuffle(categories)
+    for category in categories:
 
-    try:
-        count += 1
-        try:
-            for category in categories:
-                print "*************"
-                print str(datetime.now())
-                print "Now aggregating, current category: " + category + " , current count: " + str(count)
-                print "*************"
-                c.main(category)
-                print "*************"
-                print str(datetime.now())
-                print "Now aggregating, current count: " + str(count)
-                print "*************"
-            print "Sleeping for 10 minutes"
-            sleep(600)
-        except Exception as e:
-            print e
-            sleep(100)
-            pass
-
-    except Exception as e:
-        print e
-        sleep(100)
-        continue
+        submissions = fetch_submissions.get_submissions(category)
+        for submission in submissions:
+            summarized = summarize.summarize(submission)
+            if summarized is not None:
+                insert(submission, summarized)
+            
+    logger.info("Sleeping for {0} minutes".format(sleep/60))
+    time.sleep(sleep)

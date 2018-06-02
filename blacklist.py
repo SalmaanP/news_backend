@@ -41,11 +41,11 @@ blocked = {"youtube.com",
            "self.technology",
            "self.worldnews",
            "en.wikipedia.org",
-           "i.redd.it",
            "self.canada",
            "self.news",
            "self.unitedkingdom",
            "self.europe",
            "self.china",
-           "self.upliftingnews"
+           "self.upliftingnews",
+           "v.redd.it"
            }
